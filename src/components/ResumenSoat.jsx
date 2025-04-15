@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/StepFor.css";
+import "../styles/Stepfor.css";
 
 const ResumenSoat = ({ setActiveStep, formData, soat }) => {
       const [autorizado, setAutorizado] = useState(false)
