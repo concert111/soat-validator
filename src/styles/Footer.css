@@ -1,0 +1,53 @@
+.tenen-footer {
+    background-color: #505255;
+    color: #d5e3e7;
+    font-size: 0.85rem;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tenen-footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-certificado,
+  .footer-pagos {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-certificado img,
+  .footer-pagos img {
+    height: 24px;
+  }
+  
+  .footer-divider {
+    border: none;
+    border-top: 1px solid #3a3c3e;
+    margin: 1rem 0;
+  }
+  
+  .tenen-footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tenen-footer-bottom a {
+    color: #d5e3e7;
+    text-decoration: none;
+
+  }
+  
+  .tenen-footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,125 @@
+/* Estructura principal */
+.contenedor-soat {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  /* Fila superior con info básica */
+  .tarjeta-superior {
+    display: flex;
+    align-items: center;
+    background-color: #0057ff;
+    color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .tarjeta-superior > div {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  
+  .placa-info {
+    background-color: #00a1e0;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  
+  .placa-info span {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 4px;
+  }
+  
+  /* Contenedor general de datos */
+  .datos-soat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  /* Sección: Datos del vehículo */
+  .datos-vehiculo {
+    grid-column: 1;
+  }
+  
+  .datos-vehiculo h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-box {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  
+  .info-box p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Sección: Datos del tomador */
+  .datos-tomador {
+    grid-column: 2;
+  }
+  
+  .datos-tomador h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .datos-tomador p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sección: Valor a pagar */
+  .valor-pagar {
+    grid-column: 3;
+    text-align: right;
+  }
+  
+  .valor-pagar h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .valor-pagar .precio {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0057ff;
+  }
+  
+  /* Botón Comprar (opcional) */
+  .boton-comprar {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #dce300;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .boton-comprar:hover {
+    background-color: #c5cc00;
+  }
+  

@@ -1,0 +1,47 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Elimina el color de fondo oscuro */
+  color-scheme: light dark;
+  background-color: #ffffff; /* Fondo blanco por defecto */
+  color: #213547; /* Texto oscuro */
+  --primary: #0033a0;
+  --secondary: #00aec7;
+  --tertiary: #e3e829;
+  --quarter: #53565A;
+  --error: red;
+  --nav-bar: #d9e1f1;
+  --text-nav: #0033a0;
+  --hover-button: #fff;
+  --breadcrumb-success: #63ba2f;
+  --breadcrumb-text: #00AEC7;
+  --breadcrumb-active: #fff;
+  --menu-bg: #d9e1f1;
+  --menu-text: #0033a0;
+  --title-text: #53565a;
+  --placa-bg: #ccd6ec;
+  --descuentos-color: #727272;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Elimina el flex que centra todo */
+  display: block;
+}
+
+button {
+  background-color: #f9f9f9; /* Color claro */
+  color: #213547; /* Color de texto */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  } */
+}

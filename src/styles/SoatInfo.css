@@ -1,0 +1,133 @@
+.soat {
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    margin: 0 auto;
+}
+
+
+.soat-nav {
+    background-color: #0033a0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+    padding: 0rem 1rem;
+    box-shadow: 0 .2rem 1rem #00000042;
+  }
+  
+  .soat-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 1rem 3rem;
+    position: relative;
+    padding-bottom: 5px;
+    padding-bottom: 20px; /* <-- Aumenta el espacio */
+    scroll-behavior: smooth;
+  }
+  
+  .soat-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .soat-link:hover::after {
+    width: 100%;
+  }
+  
+ /* seccion 1 */
+ .soat-sec {
+    width: 60%;
+    padding: 0rem 0px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+
+  }
+  
+  .soat-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap; /* Para mobile */
+  }
+  
+  .soat-img {
+    width: 45%;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 4px;
+    object-fit: cover;
+    top: -2rem;
+    left: -2rem;
+    position: relative;
+  }
+  
+  .soat-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 700px;
+  }
+  
+  .soat-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0033a0;
+    margin-bottom: 20px;
+  }
+  
+  .soat-list {
+    list-style: none;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  
+  .soat-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .soat-list li img {
+    width: 51px;
+    height: 47px;
+    margin-top: 4px;
+  }
+  
+  .soat-list li p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #727272;
+    margin: 0;
+  }
+  
+  .soat-list strong {
+    font-weight: bold;
+    color: #727272;
+  }
+  
+  .soat-list em {
+    font-style: italic;
+  }
+  
+  .soat-list a {
+    color: #007bff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .soat-list a:hover {
+    text-decoration: underline;
+  }
+  

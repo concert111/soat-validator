@@ -1,0 +1,116 @@
+.tenen-section {
+    font-family: 'Arial', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .tenen-divider {
+    border: none;
+    border-top: 1px solid #001b44;
+    margin-bottom: 2rem;
+  }
+  
+  .tenen-title h3 {
+    color: #009fe3;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .tenen-timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .tenen-line {
+    position: absolute;
+    top: 50%; /* posiciona en el centro vertical */
+    left: 50px;  /* puedes ajustar esto según el diseño */
+    transform: translateY(-50%); /* centra verticalmente */
+    width: 4px;
+    height: 80%; /* o 100%, según necesites */
+    background-color: #1d428a;
+  }
+  
+  .tenen-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .circle {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  .tenen-icon-circle img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+  }
+  
+  .tenen-text-box {
+    background-color: #f1f2f3;
+    border-radius: 50px;
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+    color: #202020;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+  }
+  
+  .tenen-text-box strong {
+    font-weight: bold;
+  }
+  
+  .tenen-contacto {
+    margin-top: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tenen-contacto h4 {
+    color: #00b2ca;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .tenen-contacto p {
+    color: #202020;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* NUEVO: para que Bogotá y Línea Nacional estén en la misma línea */
+  .tenen-contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .tenen-ciudades {
+    color: #0072ce;
+  }
+  
+  .tenen-linea {
+    color: #00b2ca;
+    white-space: nowrap;
+  }
+  
+  .tenen-bold {
+    font-weight: bold;
+  }
+  

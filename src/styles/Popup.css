@@ -1,0 +1,70 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    align-items: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #0033a0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #464646;
+  }
+  
+  ul {
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #464646;
+
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  ul li a {
+    color: #007bff;
+  }
+  .confirm-btn {
+    width: 164px;
+    background-color: #e3e829;
+    font-size: 1rem;
+    color: #0033a0;
+    font-weight: 700;
+    border: 0;
+    border-radius: 3.125rem;
+    padding: .5rem 2.5rem;
+    margin-top: 1rem;
+  }
+  

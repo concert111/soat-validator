@@ -1,0 +1,108 @@
+.fraude-section {
+    padding: 40px 0;
+    background: white;
+  }
+  
+  .fraude-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .fondo {
+    width: 50%;
+    height: auto;
+    min-height: calc(100% + 20px);
+    object-fit: cover;
+
+  }
+  
+  .contenido {
+    width: 50%;
+    padding: 0 40px;
+  }
+  
+  .contenido h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .contenido p {
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .contenido a {
+    color: #0050C8;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 20px;
+  }
+  
+  .botones {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .botones button {
+    background: #e3e829;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0033a0;
+  }
+  
+  .reclamos-section {
+    padding: 20px 0;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 60%;
+  }
+  
+  .reclamos-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .mascota {
+    width: 200px;
+    margin-top: 30px;
+  }
+  
+  .info h2 {
+    color: #0033a0;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .info ul {
+    list-style: disc;
+    color: #6c757d;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  .info a {
+    color: #0050C8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .linea-final {
+    margin-top: 2rem;
+    height: 2px;
+    background-color: #0050C8;
+    width: 100%;
+  }
+  
