@@ -7,7 +7,6 @@ const ResumenSoat = ({ setActiveStep, formData, soat }) => {
       const handleChange = (e) => {
         setAutorizado(prev => ({ ...prev, [e.target.name]: e.target.value }));
       };
- 
 
   
   const handleCompra = () => {

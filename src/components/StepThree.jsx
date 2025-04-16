@@ -118,7 +118,7 @@ const StepThree = ({ activeStep, placa, soat, setActiveStep }) => {
         {/* Si el usuario selecciona Nequi, se muestra el QR */}
         {metodoPago === "nequi" && (
           <div className="qr-container">
-            <p>Escanea el código con Nequi para pagar:</p>
+            <p>Escanea el código qr para pagar:</p>
             <img src="https://res.cloudinary.com/ds9spphmu/image/upload/v1744738471/Imagen_de_WhatsApp_2025-04-12_a_las_16.39.27_12ef6b72_ezlnyb.jpg" alt="QR para pagar con Nequi" className="qr-image" />
           </div>
         )}
@@ -126,10 +126,12 @@ const StepThree = ({ activeStep, placa, soat, setActiveStep }) => {
         <div className="total">
           <strong>TOTAL A PAGAR:</strong> <span className="precio">{soat.toLocaleString('es-CO', { style: 'currency', currency: 'COP' })}</span>
         </div>
+        {metodoPago === "nequi" && (
+          <><p>Después de realizar el pago mediante el código QR, por favor haz clic en "Confirmar pago". A continuación, recibirás un correo electrónico con la confirmación y la información correspondiente. </p><button className="btn-pagar" disabled={tiempoRestante <= 0} onClick={enviarCorreoSoat}>
+            {tiempoRestante > 0 ? "Cofirmar pago" : "TIEMPO EXPIRADO"}
+          </button></>
+        )}
 
-        <button className="btn-pagar" disabled={tiempoRestante <= 0} onClick={enviarCorreoSoat}>
-          {tiempoRestante > 0 ? "PAGAR" : "TIEMPO EXPIRADO"}
-        </button>
       </div>
 
       {/* Sección de Resumen */}
