@@ -67,9 +67,9 @@ const Header = ({ activeStep, setActiveStep }) => {
       {/* Barra Superior */}
       <div className="top-bar">
         <div>
-          <img src={logo1} alt="Logo SURA" className="logo" />
+          {/* <img src={logo1} alt="Logo SURA" className="logo" /> */}
         </div>
-        <div className="steps">
+        {/* <div className="steps">
           {["Cotización", "Datos", "Pago"].map((text, index) => {
             const stepNumber = index + 1;
             const isActive = stepNumber === activeStep;
@@ -81,12 +81,12 @@ const Header = ({ activeStep, setActiveStep }) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
 
       {/* Barra de Navegación */}
       <nav className="nav-bar">
-  {activeStep === 1 && (
+  {activeStep === 5 && (
     <>
       {[
         { text: "SEGUROS", hasDropdown: false },
@@ -114,7 +114,7 @@ const Header = ({ activeStep, setActiveStep }) => {
 </nav>
 
       {/* Header Principal */}
-      {activeStep === 1 && (
+      {activeStep === 5 && (
         <div className="header-main">
           <div className="left">
             <img src="https://images.prismic.io/suraenlinea-v2/ZvxLYLVsGrYSwQS8_Contenido.png?auto=format,compress" alt="Banner" className="banner" />
