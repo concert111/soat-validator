@@ -1,125 +1,223 @@
 /* Estructura principal */
 .contenedor-soat {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #fff;
-    padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+/* Fila superior con info básica */
+.tarjeta-superior {
+  display: flex;
+  align-items: center;
+  background-color: #0057ff;
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.tarjeta-superior > div {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.placa-info {
+  background-color: #00a1e0;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.placa-info span {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 4px;
+}
+
+/* Contenedor general de datos */
+.datos-soat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Sección: Datos del vehículo */
+.datos-vehiculo {
+  grid-column: 1;
+}
+
+.datos-vehiculo h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.info-box p {
+  margin: 0.5rem 0;
+}
+
+/* Sección: Datos del tomador */
+.datos-tomador {
+  grid-column: 2;
+}
+
+.datos-tomador h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.datos-tomador p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+/* Sección: Valor a pagar */
+.valor-pagar {
+  grid-column: 3;
+  text-align: right;
+}
+
+.valor-pagar h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.valor-pagar .precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0057ff;
+}
+
+/* Botón Comprar (opcional) */
+.boton-comprar {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #dce300;
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.boton-comprar:hover {
+  background-color: #c5cc00;
+}
+
+/* Media Queries para hacerlo responsive */
+
+/* Estilos para pantallas de tamaño mediano (tabletas y dispositivos más pequeños) */
+@media (max-width: 1024px) {
+  .contenedor-soat {
+      padding: 1rem;
   }
-  
-  /* Fila superior con info básica */
+
   .tarjeta-superior {
-    display: flex;
-    align-items: center;
-    background-color: #0057ff;
-    color: white;
-    border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 2rem;
+      flex-direction: column;
   }
-  
+
   .tarjeta-superior > div {
-    flex: 1;
-    text-align: center;
-    padding: 1rem;
-    font-size: 14px;
+      padding: 0.8rem;
+      font-size: 13px;
   }
-  
-  .placa-info {
-    background-color: #00a1e0;
-    padding: 1rem;
-    font-weight: bold;
-  }
-  
-  .placa-info span {
-    display: block;
-    font-size: 1.5rem;
-    color: white;
-    margin-top: 4px;
-  }
-  
-  /* Contenedor general de datos */
+
   .datos-soat {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+      grid-template-columns: 1fr 1fr;
   }
-  
-  /* Sección: Datos del vehículo */
-  .datos-vehiculo {
-    grid-column: 1;
-  }
-  
-  .datos-vehiculo h3 {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .info-box {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background: #f9f9f9;
-    padding: 1rem;
-    font-size: 14px;
-  }
-  
-  .info-box p {
-    margin: 0.5rem 0;
-  }
-  
-  /* Sección: Datos del tomador */
-  .datos-tomador {
-    grid-column: 2;
-  }
-  
-  .datos-tomador h3 {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .datos-tomador p {
-    font-size: 14px;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Sección: Valor a pagar */
+
   .valor-pagar {
-    grid-column: 3;
-    text-align: right;
+      text-align: left;
+      margin-top: 1rem;
   }
-  
-  .valor-pagar h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .valor-pagar .precio {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #0057ff;
-  }
-  
-  /* Botón Comprar (opcional) */
+
   .boton-comprar {
-    margin-top: 1rem;
-    padding: 0.8rem 2rem;
-    background-color: #dce300;
-    border: none;
-    border-radius: 25px;
-    color: #000;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
+      width: 100%;
+      margin-top: 1.5rem;
   }
-  
-  .boton-comprar:hover {
-    background-color: #c5cc00;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .contenedor-soat {
+      padding: 1rem;
   }
-  
+
+  .tarjeta-superior {
+      flex-direction: column;
+  }
+
+  .tarjeta-superior > div {
+      padding: 0.5rem;
+      font-size: 12px;
+  }
+
+  .datos-soat {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .valor-pagar {
+      text-align: left;
+      margin-top: 1rem;
+  }
+
+  .boton-comprar {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+  }
+
+  .placa-info {
+      font-size: 1rem;
+      padding: 1rem;
+  }
+
+  .info-box {
+      font-size: 12px;
+      padding: 0.8rem;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .contenedor-soat {
+      padding: 0.8rem;
+  }
+
+  .tarjeta-superior > div {
+      font-size: 12px;
+      padding: 0.5rem;
+  }
+
+  .valor-pagar h2 {
+      font-size: 0.9rem;
+  }
+
+  .valor-pagar .precio {
+      font-size: 1.5rem;
+  }
+
+  .boton-comprar {
+      font-size: 1rem;
+      padding: 1rem;
+  }
+}

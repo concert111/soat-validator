@@ -113,4 +113,88 @@
   .tenen-bold {
     font-weight: bold;
   }
+  @media (max-width: 767px) {
+    /* Sección Tenen */
+    .tenen-section {
+      width: 90%;  /* Amplía el ancho en dispositivos móviles */
+      margin: 0 auto;
+    }
+  
+    /* Titulo de la sección */
+    .tenen-title h3 {
+      font-size: 1.5rem;  /* Ajustar tamaño del título */
+      margin-bottom: 1rem;
+    }
+  
+    /* Línea divisoria */
+    .tenen-divider {
+      width: 80%;  /* Ajusta el ancho de la línea divisoria */
+      margin: 2rem auto;
+    }
+  
+    /* Línea de la línea de tiempo */
+    .tenen-line {
+      left: 20px; /* Ajustar la posición de la línea */
+      width: 2px; /* Disminuir el grosor de la línea */
+      height: 60%;
+    }
+  
+    /* Ítem de la línea de tiempo */
+    .tenen-item {
+      flex-direction: column;  /* Cambiar a columna para mejor disposición */
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  
+    .circle {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .tenen-icon-circle img {
+      width: 25px;  /* Ajusta el tamaño del icono */
+      height: 25px;
+    }
+  
+    /* Caja de texto de cada item */
+    .tenen-text-box {
+      font-size: 0.9rem;
+      padding: 0.8rem 1rem;
+      width: auto;
+      font-size: 0.85rem;  /* Ajuste de tamaño de fuente */
+      text-align: center; /* Centrar texto */
+    }
+  
+    /* Sección de contacto */
+    .tenen-contacto {
+      margin-top: 1rem;
+    }
+  
+    .tenen-contacto h4 {
+      font-size: 1.1rem;  /* Ajuste de tamaño de fuente */
+    }
+  
+    .tenen-contacto p {
+      font-size: 0.9rem;
+    }
+  
+    /* Grilla de contacto (para Bogotá y Línea Nacional) */
+    .tenen-contacto-grid {
+      grid-template-columns: 1fr;  /* Cambiar a una sola columna */
+      gap: 1rem;
+    }
+  
+    .tenen-ciudades {
+      font-size: 0.95rem;
+    }
+  
+    .tenen-linea {
+      font-size: 0.95rem;
+    }
+    
+    .tenen-bold {
+      font-weight: 600;
+    }
+  }
   

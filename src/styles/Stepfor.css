@@ -1,93 +1,199 @@
+/* Contenedor principal para la segunda sección */
 .step-two-container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    margin: auto;
-    width: 60%
-    
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  width: 60%;
+}
+
+/* Columna izquierda */
+.left-column {
+  flex: 2;
+}
+
+/* Columna derecha */
+.right-column {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Información del vehículo */
+.vehiculo-info {
+  margin-bottom: 20px;
+}
+
+.vehiculo-info h2 {
+  color: #002f87;
+  font-size: 30px;
+}
+
+/* Caja de información */
+.info-box {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Contenedor del formulario */
+.form-container p {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #464646;
+  margin: 5px 0;
+}
+
+.form-container h2 {
+  color: #002f87;
+  font-size: 30px;
+}
+
+/* Etiquetas pequeñas */
+.label-small {
+  color: #0076d6;
+  font-size: 14px;
+}
+
+/* Valor a pagar */
+.valor-pagar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e5e5e5;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.valor {
+  color: #004aad;
+  font-size: 22px;
+}
+
+/* Contenedor de los checkboxes */
+.checkbox-container {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.checkbox-container span {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Botón comprar */
+.btn-comprar {
+  background: #e3e829;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Media Queries para hacerlo responsive */
+
+/* Para pantallas medianas (tabletas y dispositivos pequeños) */
+@media (max-width: 1024px) {
+  .step-two-container {
+      width: 90%;
+      flex-direction: column;
+      gap: 15px;
   }
-  .left-column {
-    flex: 2;
-  }
-  
+
   .right-column {
-    flex: 1;
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    width: 10%;
+      width: 100%;
+      padding: 15px;
   }
-  
-  .vehiculo-info {
-    margin-bottom: 20px;
-  }
-  .vehiculo-info h2{
-     color: #002f87;
-    font-size: 30px;
-  }
-  
-  .info-box {
-    background: #f8f8f8;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .form-container p {
-    width: 80%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #464646;
-    margin: 5px 0;
+
+  .vehiculo-info h2 {
+      font-size: 26px;
   }
 
   .form-container h2 {
-    color: #002f87;
-    font-size: 30px;
+      font-size: 26px;
   }
-  
-  .label-small {
-    color: #0076d6;
-    font-size: 14px;
+
+  .valor-pagar .valor {
+      font-size: 20px;
   }
-  
-  .valor-pagar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #e5e5e5;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
-  .valor {
-    color: #004aad;
-    font-size: 22px;
-  }
-  
-  .checkbox-container {
-    display: flex;
-    align-items: start;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .checkbox-container span {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  
+
   .btn-comprar {
-    background: #e3e829;
-    color: #000;
-    border: none;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 3.125rem;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 15px;
+      font-size: 14px;
   }
-  
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .step-two-container {
+      width: 95%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .left-column {
+      flex: 1;
+  }
+
+  .right-column {
+      width: 90%;
+      padding: 10px;
+  }
+
+  .vehiculo-info h2 {
+      font-size: 24px;
+  }
+
+  .form-container h2 {
+      font-size: 24px;
+  }
+
+  .valor-pagar .valor {
+      font-size: 18px;
+  }
+
+  .checkbox-container span {
+      font-size: 14px;
+  }
+
+  .btn-comprar {
+      font-size: 13px;
+      padding: 10px;
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .step-two-container {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .vehiculo-info h2 {
+      font-size: 22px;
+  }
+
+  .form-container h2 {
+      font-size: 22px;
+  }
+
+  .valor-pagar .valor {
+      font-size: 16px;
+  }
+
+  .btn-comprar {
+      font-size: 12px;
+      padding: 8px;
+  }
+}

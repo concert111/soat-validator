@@ -197,3 +197,141 @@ input, select {
   font-weight: 700;
   margin-top: 2px;
 }
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  /* Contenedor del formulario */
+  .formulario-container {
+    width: 90%;  /* Ajusta el ancho */
+    padding: 1rem;
+    min-height: 70vh;  /* Ajusta la altura mínima */
+  }
+
+  /* Títulos */
+  .titulo-formulario, .titulo-estepfor {
+    font-size: 1.4rem;  /* Ajusta el tamaño de fuente */
+    margin-bottom: 1rem;
+  }
+
+  /* Alerta de información */
+  .alerta-info {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .icono-info {
+    font-size: 1.2rem;  /* Ajusta el tamaño del ícono */
+  }
+
+  /* Campo de los radios */
+  .campo-radio {
+    text-align: left;
+    font-size: 0.9rem;  /* Ajusta el tamaño de fuente */
+  }
+
+  /* Grupo de botones de radio */
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .radio-group input {
+    margin-right: 0.6rem;
+  }
+
+  /* Formulario */
+  .formulario {
+    gap: 0.8rem;
+  }
+
+  input, select {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  /* Botones */
+  .btn-regresar {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .barra-superior-soat {
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  /* Contenedor de placa */
+  .placa-container {
+    padding: 0 10px;
+  }
+
+  .placa-info .label {
+    font-size: 14px;
+  }
+
+  .placa-valor {
+    font-size: 18px;
+  }
+
+  /* Triángulo de la placa */
+  .flecha-triangulo {
+    width: 15px;
+    height: 100%;
+  }
+
+  /* Información adicional */
+  .info-item {
+    font-size: 0.9rem;
+  }
+
+  .info-item .label {
+    font-size: 13px;
+  }
+
+  .info-item .value {
+    font-size: 16px;
+  }
+}
+
+/* Media Query para pantallas grandes (tabletas y escritorios) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Contenedor del formulario */
+  .formulario-container {
+    width: 75%;
+  }
+
+  /* Títulos */
+  .titulo-formulario, .titulo-estepfor {
+    font-size: 1.6rem;
+  }
+
+  /* Alerta de información */
+  .alerta-info {
+    font-size: 1rem;
+  }
+
+  /* Campos y botones */
+  input, select {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .btn-regresar {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .barra-superior-soat {
+    height: 70px;
+  }
+
+  /* Placa y flecha */
+  .placa-container {
+    padding: 10px 20px;
+  }
+
+  .placa-valor {
+    font-size: 22px;
+  }
+}

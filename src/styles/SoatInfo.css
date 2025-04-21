@@ -130,4 +130,61 @@
   .soat-list a:hover {
     text-decoration: underline;
   }
+  @media (max-width: 767px) {
+    .soat-sec {
+      width: 95%;
+      margin: 2rem auto;
+      padding: 1rem 0;
+      flex-direction: column;
+    }
+  
+    .soat-box {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .soat-img {
+      /* width: 10%; */
+      max-width: 100%;
+      position: static;
+    }
+  
+    .soat-text {
+      width: 100%;
+      padding: 0 1rem;
+      max-width: 100%;
+    }
+  
+    .soat-title {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .soat-list li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .soat-list li img {
+      margin: 0 auto;
+    }
+  
+    .soat-list li p {
+      font-size: 16px;
+    }
+  
+    .soat-nav {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      padding: 1rem 0.5rem;
+    }
+  
+    .soat-link {
+      padding: 0.5rem 1rem;
+      font-size: 15px;
+    }
+  }
   

@@ -105,4 +105,100 @@
     background-color: #0050C8;
     width: 100%;
   }
+  @media (max-width: 767px) {
+    /* Sección Fraude */
+    .fraude-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .fondo {
+      width: 100%;
+      height: auto;
+      min-height: 200px; /* Ajusta la altura en móvil */
+      object-fit: cover;
+    }
+  
+    .contenido {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .contenido h2 {
+      font-size: 32px; /* Tamaño más pequeño para móviles */
+      text-align: center;
+    }
+  
+    .contenido p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    .contenido a {
+      font-size: 16px;
+      padding: 0;
+    }
+  
+    .botones {
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .botones button {
+      width: 80%;
+      padding: 12px 0;
+    }
+  
+    /* Sección Reclamos */
+    .reclamos-section {
+      width: 100%;
+      padding: 20px;
+      margin: auto;
+      display: block;
+    }
+  
+    .reclamos-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+ 
+  
+    .mascota {
+      width: 120px; /* Ajusta el tamaño de la mascota en móvil */
+      margin-top: 20px;
+    }
+  
+    .info h2 {
+      width: 90%;
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .info ul {
+      width: 90%;
+      font-size: 14px;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .info a {
+      font-size: 16px;
+    }
+  
+    .linea-final {
+      margin-top: 2rem;
+      height: 2px;
+      background-color: #0050C8;
+      width: 80%; /* Ajusta el tamaño de la línea */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   

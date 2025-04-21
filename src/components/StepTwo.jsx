@@ -107,7 +107,8 @@ const FormularioVehiculo = ({ setActiveStep, placa, setPlaca, setSoat, soat }) =
         <span className="value">{placa.modelo}</span>
       </div>
     </div>
-<ResumenSoat formData={placa} soat={soat} setActiveStep={setActiveStep}/></>
+<ResumenSoat formData={placa} soat={soat} setActiveStep={setActiveStep}/>
+</>
 }
       {soat === 0  &&
     <div className="formulario-container">

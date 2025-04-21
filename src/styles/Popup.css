@@ -1,70 +1,143 @@
+/* Capa de fondo oscurecido para el popup */
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .popup-content {
-    width: 450px;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    align-items: center;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    color: #0033a0;
-  }
-  
-  h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #464646;
-  }
-  
-  ul {
-    text-align: left;
-    font-size: 19px;
-    margin-bottom: 15px;
-    color: #464646;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 
+/* Contenido del popup */
+.popup-content {
+  width: 450px;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  align-items: center;
+}
+
+/* Botón de cierre (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0033a0;
+}
+
+/* Título del popup */
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #464646;
+}
+
+/* Estilo de la lista dentro del popup */
+ul {
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: #464646;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #007bff;
+}
+
+/* Botón de confirmación */
+.confirm-btn {
+  width: 164px;
+  background-color: #e3e829;
+  font-size: 1rem;
+  color: #0033a0;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3.125rem;
+  padding: .5rem 2.5rem;
+  margin-top: 1rem;
+}
+/* Media Queries para hacerlo más responsive */
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .popup-content {
+      width: 80%;
+      padding: 20px;
   }
-  ul li {
-    margin-bottom: 10px;
+
+  h3 {
+      font-size: 18px;
   }
-  ul li a {
-    color: #007bff;
+
+  ul {
+      font-size: 16px;
   }
+
   .confirm-btn {
-    width: 164px;
-    background-color: #e3e829;
-    font-size: 1rem;
-    color: #0033a0;
-    font-weight: 700;
-    border: 0;
-    border-radius: 3.125rem;
-    padding: .5rem 2.5rem;
-    margin-top: 1rem;
+      width: 150px;
+      font-size: 0.9rem;
   }
-  
+}
+
+/* Para pantallas pequeñas (móviles estándar) */
+@media (max-width: 768px) {
+  .popup-content {
+      width: 90%;
+      padding: 15px;
+  }
+
+  h3 {
+      font-size: 16px;
+  }
+
+  ul {
+      font-size: 14px;
+  }
+
+  .confirm-btn {
+      width: 130px;
+      font-size: 0.8rem;
+      padding: 0.4rem 2rem;
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .popup-content {
+      width: 95%;
+      padding: 10px;
+  }
+
+  h3 {
+      font-size: 14px;
+  }
+
+  ul {
+      font-size: 12px;
+  }
+
+  .confirm-btn {
+      width: 120px;
+      font-size: 0.75rem;
+      padding: 0.3rem 1.5rem;
+  }
+}
