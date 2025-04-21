@@ -31,7 +31,8 @@ const StepThree = ({ activeStep, placa, soat, setActiveStep }) => {
     
     const templateParams = {
       name: placa.nombre,
-      email: placa.correo
+      email: placa.correo,
+      value: soat.toLocaleString('es-CO', { style: 'currency', currency: 'COP' }),
     };
   
     emailjs.send(
