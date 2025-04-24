@@ -11,16 +11,16 @@ const Home = () => {
 
   return (
     <div className="home" > 
-       <Popup />
+       {/* <Popup /> */}
       {/* Pasamos activeStep y setActiveStep a Header */}
-      <Header activeStep={activeStep} setActiveStep={setActiveStep} />
+      {/* <Header activeStep={activeStep} setActiveStep={setActiveStep} /> */}
 
       {/* Mostrar la información solo en el paso 1 */}
       {activeStep === 1 && (
         <SoatInfo/>
       )}
-        <ChatBot />
-        <Footer/>
+        {/* <ChatBot /> */}
+        {/* <Footer/> */}
     </div>
   );
 };
